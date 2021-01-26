@@ -1,6 +1,6 @@
 {
-  "name": "react-native-test",
-  "version": "1.0.0",
+  "name": "react-native-testing",
+  "version": "1.0.4",
   "description": "Just a simple test for create npm package",
   "main": "index.js",
   "repository": {
@@ -12,6 +12,10 @@
   },
   "author": "Huy Pham",
   "license": "ISC",
+  "peerDependencies": {
+    "react": "^17.0.1",
+    "react-native": "^0.63.4"
+  },
   "dependencies": {
     "lodash": "^4.17.20",
     "prop-types": "^15.7.2"

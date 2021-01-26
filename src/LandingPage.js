@@ -1,34 +1,38 @@
-import React, { useState } from 'react';
-import { View, Text, TextInput, StyleSheet } from 'react-native';
+import React, { Component } from 'react';
+import { StyleSheet, View, Text, TextInput } from 'react-native';
 
-const LandingPage = () => {
-    const [text, setText] = useState('');
+class LandingPage extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+            inputText: ''
+		};
+	}
 
-    return (
-        <View style={styles.container}>
-            <Text>Welcome</Text>
+	render() {
+		return <View style={styles.container}>
+			<Text>Welcome</Text>
+			<Text>{this.state.inputText}</Text>
             <TextInput
-                style={styles.textInputContainer}
-                onChangeText={t => setState({ 
-                    ...text,
-                    text: t
-                })}
-                placeholder="Please type here..."
-            />
-        </View>
-    )
+                style={styles.inputText}
+                onChangeText={text => this.setState({inputText: text})}
+            /> 
+		</View>;
+	}
 }
 
 export default LandingPage;
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center',
+	container: {
+		flex: 1, alignItems: 'center', justifyContent: 'center',
     },
-    textInputContainer: {
-        width: 300,
-        color: '#252525'
+    inputText: {
+		width: 300,
+		borderWidth: 1,
+		borderColor: '#DEDEDE',
+		height: 40,
+		padding: 10,
+		borderRadius: 3
     }
-})
+});
