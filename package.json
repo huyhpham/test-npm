@@ -1,0 +1,24 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "Just a simple test for create npm package",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huyhpham/test-npm.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Huy Pham",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.20",
+    "prop-types": "^15.7.2"
+  },
+  "devDependencies": {
+    "metro-react-native-babel-preset": "^0.64.0",
+    "react": "^17.0.1",
+    "react-native": "^0.63.4"
+  }
+}
