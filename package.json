@@ -1,5 +1,5 @@
 {
-  "name": "test",
+  "name": "react-native-test",
   "version": "1.0.0",
   "description": "Just a simple test for create npm package",
   "main": "index.js",
@@ -17,8 +17,6 @@
     "prop-types": "^15.7.2"
   },
   "devDependencies": {
-    "metro-react-native-babel-preset": "^0.64.0",
-    "react": "^17.0.1",
-    "react-native": "^0.63.4"
+    "metro-react-native-babel-preset": "^0.64.0"
   }
 }
